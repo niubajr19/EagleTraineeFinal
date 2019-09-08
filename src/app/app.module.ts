@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BookComponent } from './book/book.component';
 import { SearchComponent } from './book/search/search.component';
-import { MyBooksComponent } from './book/my-books/my-books.component';
 import { InformationsComponent } from './informations/informations.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { InformationsComponent } from './informations/informations.component';
     HomeComponent,
     BookComponent,
     SearchComponent,
-    MyBooksComponent,
     InformationsComponent
   ],
   imports: [
