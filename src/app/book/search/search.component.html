@@ -1,14 +1,20 @@
-<html>
-    <head>
-        <title>NOIX QUE COLA</title>
-    </head>
-<body>
-    <h1>Book Finder</h1>s
-    <input id="search" placeholder="Title or Author">
-    <button id="button" type="button">Click Me</button>
+<body class=text-center>
+    <h1>Book Finder</h1>    
+    <input id="search" placeholder="Title or Author"><br>
+    <button mdbBtn id="button" type="button" gradient="blue" rounded="true" mdbWavesEffect>Click Me</button>
     <div id="results"></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
-<script src="search.component.ts"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <div>
+    <script src="search.component.ts"></script>
+    <script> 
+    if(search =="")
+    {  
+        alert("Insere algo ai irmão")
+    }
+
+    </script>
+
+
+</div>
 </body>
-</html>
     

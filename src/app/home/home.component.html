@@ -3,7 +3,7 @@
 
     <!--Navbar-->
     <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top ">
 
   <!-- Navbar brand -->
   <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
@@ -17,7 +17,7 @@
               <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+              <a class="nav-link waves-light" [routerLink]="['/my-books']"mdbWavesEffect>Minha Estante</a>
           </li>
           <li class="nav-item">
               <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
@@ -49,7 +49,7 @@
                     <br>
                     <br>
                     <a mdbBtn color="white" outline="true" class="wow fadeInLeft waves-light text-center" data-wow-delay="0.3s"
-                      mdbWavesEffect>Pesquisar</a>
+                      mdbWavesEffect >Pesquisar</a>
                   </div>
                 </div>
     

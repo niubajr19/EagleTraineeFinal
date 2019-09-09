@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { BookComponent } from './book/book.component';
 import { SearchComponent } from './book/search/search.component';
 import { InformationsComponent } from './informations/informations.component';
+import { MyBooksComponent } from './book/my-books/my-books.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InformationsComponent } from './informations/informations.component';
     HomeComponent,
     BookComponent,
     SearchComponent,
-    InformationsComponent
+    InformationsComponent,
+    MyBooksComponent
   ],
   imports: [
     BrowserModule,
