@@ -9,6 +9,7 @@ import { BookComponent } from './book/book.component';
 import { SearchComponent } from './book/search/search.component';
 import { InformationsComponent } from './informations/informations.component';
 import { MyBooksComponent } from './book/my-books/my-books.component';
+import { HeaderComponent } from './home/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MyBooksComponent } from './book/my-books/my-books.component';
     BookComponent,
     SearchComponent,
     InformationsComponent,
-    MyBooksComponent
+    MyBooksComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

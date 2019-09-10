@@ -5,6 +5,7 @@ import { TemplateDefinitionBuilder } from '@angular/compiler/src/render3/view/te
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
+
 })
 export class SearchComponent implements OnInit 
 {

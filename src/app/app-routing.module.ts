@@ -8,10 +8,11 @@ import { MyBooksComponent } from './book/my-books/my-books.component';
 
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
+  {path:'', component:HomeComponent},
   {path:'search',component:SearchComponent},
   {path:'informations',component:InformationsComponent},
-  {path:'my-books',component:MyBooksComponent}
+  {path:'my-books',component:MyBooksComponent},
+  {path:'informations', component:InformationsComponent}
 ];
 
 @NgModule({

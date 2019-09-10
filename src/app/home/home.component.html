@@ -1,36 +1,8 @@
 <!--Main Navigation-->
 <header class="intro-header">
-
-    <!--Navbar-->
-    <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top ">
-
-  <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
-
-  <!-- Collapsible content -->
-  <links>
-
-      <!-- Links -->
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-              <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link waves-light" [routerLink]="['/my-books']"mdbWavesEffect>Minha Estante</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
-          </li>
-      </ul>
-      <!-- Links -->
-      
-  </links>
-  <!-- Collapsible content -->
-
-</mdb-navbar>
-<!--/.Navbar-->
-
+<app-header></app-header>
+</header>
+<body>
     <!--Intro Section-->
     <section class="view intro-video">
         <video class="h-200" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline
@@ -49,7 +21,7 @@
                     <br>
                     <br>
                     <a mdbBtn color="white" outline="true" class="wow fadeInLeft waves-light text-center" data-wow-delay="0.3s"
-                      mdbWavesEffect >Pesquisar</a>
+                      mdbWavesEffect [routerLink]="['/search']">Pesquisar</a>
                   </div>
                 </div>
     
@@ -59,5 +31,5 @@
         </div>
       </section>
 
-  </header>
+</body>
   <!--Main Navigation-->
