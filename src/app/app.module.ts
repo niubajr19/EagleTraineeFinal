@@ -5,11 +5,19 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { SearchComponent } from './book/search/search.component';
+import { InformationsComponent } from './informations/informations.component';
+import { MyBooksComponent } from './book/my-books/my-books.component';
+import { HeaderComponent } from './home/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent,
+    InformationsComponent,
+    MyBooksComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
