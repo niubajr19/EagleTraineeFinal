@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { TemplateDefinitionBuilder } from '@angular/compiler/src/render3/view/template';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -14,9 +13,11 @@ export class SearchComponent implements OnInit
 
   ngOnInit() 
   {
-    
+  
     function bookSearch()
     {
+      //Definindo as variaveis às quais receberão os valores importantes (busca e resultados) 
+                
       let search = (<HTMLInputElement>document.getElementById('search')).value 
       let results = document.getElementById('results')
       $('#results').html("");
@@ -29,17 +30,22 @@ export class SearchComponent implements OnInit
           {
               for(var i=0;i<data.items.length;i++)  
               { 
+                //Dados que receberá da API - Nome, Autor, e url
                 results.innerHTML += "<h1>"+data.items[i].volumeInfo.title + "</h1>"
-                results.innerHTML += "<h2>"+data.items[i].volumeInfo.authors + "</h2><br><br> "
-                results.innerHTML += ('<a href=' + data.items[i].volumeInfo.infoLink +'><button id="imagebutton" class="btn red aligning">Read More</button></a>')
+                results.innerHTML += "<h2>"+data.items[i].volumeInfo.authors + "</h2> "
+                results.innerHTML += ('<a href=' + data.items[i].volumeInfo.infoLink +
+                '><button id="imagebutton" class="btn gradient dark cyan aligning">Read More</button></a>' +
+                '<button id="addLivro" class="btn gradient red aligning">Adicionar Livro</button><br><br>')
+
               }
+
           },
           type:'GET'
-      });
+      })
+      console.log(results)
     }
-  
   document.getElementById('button').addEventListener('click', bookSearch, false)
-  }
+ }
     
 
 }
